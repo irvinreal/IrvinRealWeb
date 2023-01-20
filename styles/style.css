@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -50,13 +51,16 @@ nav {
 }
 
 .logotipo-nav {
+    transition: ease-out;
+    border-image: none;
+    border-radius: 100%;
+    filter: blur(0.6px) !important;
+    filter: brightness(0.8) !important;
     animation-name: logo-animation;
     animation-duration: 1.8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transition: ease-out;
-    border-image: none;
-    border-radius: 100%;
+    z-index: 100;
 }
 
 @keyframes logo-animation {
@@ -65,12 +69,18 @@ nav {
     }
 
     to {
-        box-shadow: 0 0 0.5rem rgb(0, 0, 0), 0 0 0.7rem rgb(0, 0, 0);
+        box-shadow: 0 0 0.3rem rgb(0, 0, 0), 0 0 0.5rem rgb(0, 0, 0),
+            0 0 0.7rem rgb(0, 0, 0), 0 0 0.9rem rgb(0, 0, 0),
+            0 0 1.2rem rgb(0, 0, 0);
     }
 }
 
 .logotipo-nav:hover {
-    box-shadow: 0 0 0.7rem rgb(0, 0, 0), 0 0 .8rem rgb(0, 0, 0) !important;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0.4rem rgb(255, 255, 255), 0 0 0.4rem rgb(255, 255, 255),
+        0 0 0.8rem rgb(0, 0, 0), 0 0 1rem rgb(0, 0, 0) !important;
+    filter: blur(0) !important;
+    filter: brightness(1.7) !important;
 }
 
 .box-greeting {
@@ -148,9 +158,18 @@ h5 {
 
 ul {
     display: flex;
-    gap: 1.5rem;
-    padding-left: 2rem;
-    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    display: none;
+    background-color: black;
+    height: 5vh;
+    position: relative;
+    right: 1rem;
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 2rem;
 }
 
 li {
@@ -159,6 +178,23 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--font-color) !important;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 100;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.span-enproduccion {
+    position: fixed;
+    bottom: 7rem;
+    background-color: rgba(136, 136, 136, 0.123);
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: rgba(255, 0, 0, 0.199);
 }
 
 /* Section - two */
@@ -174,12 +210,13 @@ a {
 .box-proyectos {
     display: flex;
     width: 100%;
-    height: 40%;
+    height: 35%;
+    margin: 0 1rem;
 }
 
 .box-proyecto {
     width: 100%;
-    margin: 3rem;
+    margin: .5rem;
     border: var(--borde);
 }
 
@@ -190,32 +227,80 @@ h6 {
 .wash {
     background-image: url(../assets/imgs/wash/bg-img-first-section.png);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    color: black;
     font-size: 4rem;
-    border-radius: .28rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0.28rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     color: white;
-    text-shadow: 0 0 .5rem black, 0 0 .6rem black;
-    padding-top: 1.5rem;
+    text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.726),0 0 0.4rem rgba(0, 0, 0, 0.726), 0 .3rem 0.9rem black;
+    padding-top: 2rem;
 }
 
 .wash:hover {
-    transition: 1s;
-    width: 126.5rem;
-    background-size: contain;
-    /* box-shadow: 0 0 .7rem rgb(62, 168, 0); */
+    transition: 1s ease-in-out;
+    width: 125rem;
+    font-size: 7rem;
+    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
 }
 
 .cajero-atm {
     background-image: url(../assets/imgs/cajero-atm/familia-bg-image.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.726), 0 0 0.7rem black;
+    font-size: 2rem;
+    padding-top: 4rem;
+    letter-spacing: .1rem;
 }
 
+.cajero-atm:hover {
+    transition: 1s ease-in-out;
+    width: 125rem;
+    font-size: 6rem;
+    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
+}
 
+.cajero-atm-txt {
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: .4rem;
+}
+
+.viajes {
+    background-image: url(../assets/imgs/viajes/viajes-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 208, 0);
+    text-shadow: 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255);
+    font-size: 2.5rem;
+    padding-top: 4.5rem;
+    letter-spacing: .3rem;
+}
+
+.viajes:hover {
+    transition: 1s ease-in-out;
+    width: 125rem;
+    font-size: 4.5rem;
+    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
+}
+
+.omegalab {
+    background-image: url(../assets/imgs/omegalab/omegalab.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.omegalab:hover {
+    transition: 1s ease-in-out;
+    width: 125rem;
+    font-size: 7rem;
+    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
+}
 
 /* Section - three */
 .section-three {
@@ -231,4 +316,17 @@ footer {
     color: red;
     text-align: center;
     padding-top: 100px;
+}
+
+.open {
+    transition: 0.4s ease-in-out;
+    display: flex !important;
+}
+
+.on {
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 0.4rem rgb(255, 255, 255), 0 0 0.4rem rgb(255, 255, 255),
+        0 0 0.8rem rgb(0, 0, 0), 0 0 1rem rgb(0, 0, 0) !important;
+    filter: blur(0) !important;
+    filter: brightness(1.7) !important;
 }
