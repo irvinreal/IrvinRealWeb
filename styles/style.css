@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
     --font-color: rgb(235, 220, 220);
@@ -16,12 +15,13 @@
 }
 
 body::-webkit-scrollbar {
-    width: 2px;
-    background-color: black;
+    width: 3px;
+    background-color: rgb(0, 0, 0);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.363);
+    border-radius: 5rem;
 }
 
 body {
@@ -32,301 +32,14 @@ body {
     overflow-x: hidden;
 }
 
-.section-one {
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-nav {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    display: flex;
-    align-items: center;
-}
-
-.logotipo-nav {
-    transition: ease-out;
-    border-image: none;
-    border-radius: 100%;
-    filter: blur(0.6px) !important;
-    filter: brightness(0.8) !important;
-    animation-name: logo-animation;
-    animation-duration: 1.8s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    z-index: 100;
-}
-
-@keyframes logo-animation {
-    from {
-        box-shadow: 0 0 0 rgb(0, 0, 0);
-    }
-
-    to {
-        box-shadow: 0 0 0.3rem rgb(0, 0, 0), 0 0 0.5rem rgb(0, 0, 0),
-            0 0 0.7rem rgb(0, 0, 0), 0 0 0.9rem rgb(0, 0, 0),
-            0 0 1.2rem rgb(0, 0, 0);
-    }
-}
-
-.logotipo-nav:hover {
-    transition: 0.5s ease-in-out;
-    box-shadow: 0 0 0.4rem rgb(255, 255, 255), 0 0 0.4rem rgb(255, 255, 255),
-        0 0 0.8rem rgb(0, 0, 0), 0 0 1rem rgb(0, 0, 0) !important;
-    filter: blur(0) !important;
-    filter: brightness(1.7) !important;
-}
-
-.box-greeting {
-    margin-top: 5rem;
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .greeting-imgs {
-    position: relative;
-    right: 19rem;
-    top: 5rem;
-    width: 25rem;
-    height: 22rem;
-    background-image: url(../code-1.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0;
-} */
-
-.greeting {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Sofia Sans", sans-serif;
-    position: relative;
-    bottom: 7rem;
-}
-
-.saludo {
-    color: rgb(3, 122, 143);
-}
-
-.ocupacion {
-    color: rgb(195, 0, 255);
-}
-
-.mi-nombre-es {
-    color: rgb(9, 255, 0);
-    animation-name: prender;
-    animation-duration: 1.3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition: ease-out;
-}
-
-@keyframes prender {
-    from {
-        text-shadow: 0 0 0.2rem rgb(238, 255, 0), 0 0 0.4rem rgb(238, 255, 0),
-            0 0 0.5rem rgb(238, 255, 0);
-    }
-
-    to {
-        text-shadow: 0 0 0.2rem rgb(255, 255, 255);
-    }
-}
-
-.irvin-foto {
-    width: 10rem;
-    height: 10rem;
-}
-
-h5 {
-    display: block;
-    text-align: center;
-    color: red;
-    font-weight: lighter;
-    font-size: 1rem;
-}
-
-ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    padding-left: 4rem;
-    padding-right: 3rem;
-    display: none;
-    background-color: black;
-    height: 5vh;
-    position: relative;
-    right: 1rem;
-    border-radius: 0.5rem;
-    border-bottom-right-radius: 2rem;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--font-color) !important;
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: 100;
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-}
-
-.span-enproduccion {
-    position: fixed;
-    bottom: 7rem;
-    background-color: rgba(136, 136, 136, 0.123);
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    padding-top: 1rem;
-    font-size: 2rem;
-    color: rgba(255, 0, 0, 0.199);
-}
-
-/* Section - two */
-.section-two {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box-proyectos {
-    display: flex;
-    width: 100%;
-    height: 35%;
-    margin: 0 1rem;
-}
-
-.box-proyecto {
-    width: 100%;
-    margin: .5rem;
-    border: var(--borde);
-}
-
-h6 {
-    text-align: center;
-}
-
-.wash {
-    background-image: url(../assets/imgs/wash/bg-img-first-section.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-size: 4rem;
-    border-radius: 0.28rem;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: white;
-    text-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.726),0 0 0.4rem rgba(0, 0, 0, 0.726), 0 .3rem 0.9rem black;
-    padding-top: 2rem;
-}
-
-.wash:hover {
-    transition: 1s ease-in-out;
-    width: 125rem;
-    font-size: 7rem;
-    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
-}
-
-.cajero-atm {
-    background-image: url(../assets/imgs/cajero-atm/familia-bg-image.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.726), 0 0 0.7rem black;
-    font-size: 2rem;
-    padding-top: 4rem;
-    letter-spacing: .1rem;
-}
-
-.cajero-atm:hover {
-    transition: 1s ease-in-out;
-    width: 125rem;
-    font-size: 6rem;
-    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
-}
-
-.cajero-atm-txt {
-    background-color: rgba(0, 0, 0, 0.336);
-    padding: .4rem;
-}
-
-.viajes {
-    background-image: url(../assets/imgs/viajes/viajes-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: rgb(255, 208, 0);
-    text-shadow: 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255), 0 0 0.4rem rgb(0, 81, 255);
-    font-size: 2.5rem;
-    padding-top: 4.5rem;
-    letter-spacing: .3rem;
-}
-
-.viajes:hover {
-    transition: 1s ease-in-out;
-    width: 125rem;
-    font-size: 4.5rem;
-    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
-}
-
-.omegalab {
-    background-image: url(../assets/imgs/omegalab/omegalab.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: white;
-}
-
-.omegalab:hover {
-    transition: 1s ease-in-out;
-    width: 125rem;
-    font-size: 7rem;
-    box-shadow: 0 .2rem 4rem rgba(255, 255, 255, 0.26);
-}
-
-/* Section - three */
-.section-three {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 83, 83);
-    padding-top: 2rem;
-}
-
-footer {
-    width: 100%;
-    height: 100%;
-    color: red;
-    text-align: center;
-    padding-top: 100px;
-}
-
 .open {
-    transition: 0.4s ease-in-out;
     display: flex !important;
 }
 
 .on {
     transition: 0.4s ease-in-out;
     box-shadow: 0 0 0.4rem rgb(255, 255, 255), 0 0 0.4rem rgb(255, 255, 255),
-        0 0 0.8rem rgb(0, 0, 0), 0 0 1rem rgb(0, 0, 0) !important;
-    filter: blur(0) !important;
-    filter: brightness(1.7) !important;
+        0 0 0.2rem rgb(0, 0, 0), 0 0 .3rem rgb(0, 0, 0) !important;
+    opacity: 1;
+    transition: .5s;
 }

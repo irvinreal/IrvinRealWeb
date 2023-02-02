@@ -5,37 +5,48 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="stylesheet" href="./styles/probandoCss.css">
+        <link rel="stylesheet" href="./styles/section-one-header.css" />
+        <link rel="stylesheet" href="./styles/section-two-my-projects.css" />
+        <link rel="stylesheet" href="./styles/section-three-about-me.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/probandoCss.css" />
         <link
             rel="shortcut icon"
             href="./assets/imgs/irvin-logo-icon.png"
             type="image/x-icon"
         />
-        <title>Irvin_Real</title>
+        <title>Irvin Real</title>
     </head>
 
     <body>
-        <section class="section-one">
+        <section class="section-one-header">
             <nav>
+                <div class="img-nav">
                 <img
-                    src="./assets/imgs/irvin-logo-circle.jpg"
+                    src="./assets/imgs/irvin-silueta.png"
                     alt="logotipo-irvin"
-                    style="width: 4rem; height: 4rem"
+                    style="width: 1.7rem; height: 1.7rem"
                     class="logotipo-nav"
                 />
+            </div>
                 <ul class="ul">
                     <li><a href="#section2">My Projects</a></li>
-                    <li><a href="#section3">Practices</a></li>
-                    <li><a href="#footer">About me</a></li>
+                    <li><a href="#section3">About me</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
-            <div class="span-enproduccion"><h3>En Producción</h3></div>
             <div class="box-greeting">
-                <!-- <div class="greeting-imgs"></div> -->
+                <div class="greeting-imgs">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                    <div class="line line4"></div>
+                    <div class="line line5"></div>
+                    <div class="line line6"></div>
+                </div>
                 <div class="greeting">
                     <img
-                        src="./assets/imgs/irvin-foto.png"
+                        src="./assets/imgs/irvin-foto-transparente.png"
                         alt="icon-logo-navbar"
                         class="irvin-foto"
                     />
@@ -43,34 +54,78 @@
                         <span class="saludo">Hi!,</span
                         ><span class="mi-nombre-es"> I'm Irvin Real</span>
                     </h2>
-                    <h2>
-                        <span class="ocupacion">Full Stack Web Developer</span>
-                    </h2>
+                    <h2 class="ocupacion">Full Stack</br> Web Developer</h2>
                 </div>
             </div>
         </section>
         <!-- Section - two -->
-        <section class="section-two" id="section2">
+        <section class="section-two-my-projects" id="section2">
             <!-- Caja de proyectos -->
             <div class="box-proyectos">
                 <div class="box-proyecto wash">
+                    <a href="./public/wash/index.html" class="a-box-proyecto"></a>
                     <h6>Car Wash</h6>
                 </div>
                 <div class="box-proyecto cajero-atm">
+                    <a href="./public/cajero-atm/index.html" class="a-box-proyecto"></a>
                     <h6 class="cajero-atm-txt">Cajero ATM</h6>
                 </div>
                 <div class="box-proyecto viajes">
+                    <a href="./public/viajes/index.html" class="a-box-proyecto"></a>
                     <h6>Travel.com</h6>
                 </div>
                 <div class="box-proyecto omegalab">
+                    <a href="./public/omegalabs/index.html" class="a-box-proyecto"></a>
                 </div>
             </div>
         </section>
-        <section class="section-three" id="section3">
-            <h5>About me</h5>
+        <section class="section-three-about-me" id="section3">
+            <h4 class="title-about-me">About me...</h4>
+            <h5>Hobbies</h5>
+            <!-- <h6>Very good experience and skills on managment, communication,</h6> -->
+            <h5>Skills</h5>
+            <!-- <h6>Exersicing
+                Reading
+                Mindfullnes
+                Learn anything about mind</h6> -->
+                <h5>My thinking</h5>
         </section>
         <footer id="footer">
-            Este es el footer ---  y Bienvenido
+            <div class="container-knowledge-skills">
+                <h5>Knowledge and Skills</h5>
+                <div class="container">
+                    <div class="fila fila-beginner">
+                        <div class="beginner-title">
+                            <h5>Beginner</h5>
+                        </div>
+                    </div>
+                    <div class="fila fila-mid">
+                        <div class="mid-title">
+                            <h5>Mid</h5>
+                        </div>
+                    </div>
+                    <div class="fila fila-advanced">
+                        <div class="advanced-title">
+                            <h5>Advanced</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-up-logos">
+                    <img src="./assets/imgs/footer/mongodb-logo-png.png" alt="mongodb-logo" style="width: 3rem;" class="logo-mongodb">
+                    <img src="./assets/imgs/footer/mySql-logo-png.png" alt="mySql-logo" style="width: 3rem;" class="logo-mysql">
+                </div>
+            </div>
+            <div class="container-personal-information">
+                <div class="personal-information-box">
+                    <h5>Irvin Osvaldo Gonzalez Real</h5>
+                    <h6>
+                        Email: irvin.glez.real@hotmail.com -
+                        irvin.gm.iogr@gmail.com.
+                    </h6>
+                    <h6>WhatsApp: +(52) 33 33 53 31 76</h6>
+                    <h6>Zapopan, Jal. México.</h6>
+                </div>
+            </div>
         </footer>
         <script src="./js/main.js"></script>
     </body>
