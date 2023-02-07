@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "@mojs/core": "^1.4.0"
-  }
+    "@mojs/core": "^1.4.0",
+    "bootstrap": "^5.3.0-alpha1"
+  },
+  "name": "irvin-real-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irvinreal/IrvinRealWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irvinreal/IrvinRealWeb/issues"
+  },
+  "homepage": "https://github.com/irvinreal/IrvinRealWeb#readme",
+  "description": ""
 }

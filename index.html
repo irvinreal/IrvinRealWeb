@@ -4,12 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="stylesheet" href="./styles/section-one-header.css" />
-        <link rel="stylesheet" href="./styles/section-two-my-projects.css" />
-        <link rel="stylesheet" href="./styles/section-three-about-me.css" />
-        <link rel="stylesheet" href="./styles/footer.css" />
-        <link rel="stylesheet" href="./styles/probandoCss.css" />
+        <link rel="stylesheet" href="./src/custom.scss" />
+        <link rel="stylesheet" href="./public/css/bootstrap-custom.css" />
+        <link rel="stylesheet" href="./styles/1main.css" />
+        <link rel="stylesheet" href="./styles/2section-two.css" />
+        <link rel="stylesheet" href="./styles/3section-three.css" />
+        <!-- <link rel="stylesheet" href="./styles/4section-three-about-me.css" /> -->
+        <!-- <link rel="stylesheet" href="./styles/5footer.css" /> -->
         <link
             rel="shortcut icon"
             href="./assets/imgs/irvin-logo-icon.png"
@@ -19,114 +20,214 @@
     </head>
 
     <body>
-        <section class="section-one-header">
-            <nav>
-                <div class="img-nav">
-                <img
-                    src="./assets/imgs/irvin-silueta.png"
-                    alt="logotipo-irvin"
-                    style="width: 1.7rem; height: 1.7rem"
-                    class="logotipo-nav"
-                />
-            </div>
-                <ul class="ul">
-                    <li><a href="#section2">My Projects</a></li>
-                    <li><a href="#section3">About me</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
+        <main class="main" style="height: 100vh">
+            <nav class="navbar navbar-expand-sm bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img
+                            src="./assets/imgs/irvin-silueta-yellow.png"
+                            alt="logotipo-silueta"
+                            style="width: 2rem; height: 2rem"
+                            class="positioned"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active text-warning"
+                                    aria-current="page"
+                                    href="#section2"
+                                    >My projects</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link text-warning"
+                                    href="#section3"
+                                    >About me</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-warning" href="#footer"
+                                    >Contact me</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <div class="box-greeting">
-                <div class="greeting-imgs">
-                    <div class="line line1"></div>
-                    <div class="line line2"></div>
-                    <div class="line line3"></div>
-                    <div class="line line4"></div>
-                    <div class="line line5"></div>
-                    <div class="line line6"></div>
-                </div>
-                <div class="greeting">
-                    <img
-                        src="./assets/imgs/irvin-foto-transparente.png"
-                        alt="icon-logo-navbar"
-                        class="irvin-foto"
-                    />
-                    <h2>
-                        <span class="saludo">Hi!,</span
-                        ><span class="mi-nombre-es"> I'm Irvin Real</span>
-                    </h2>
-                    <h2 class="ocupacion">Full Stack</br> Web Developer</h2>
+            <div class="container-fluid" style="height: 90vh">
+                <div
+                    class="row justify-content-center align-items-center"
+                    style="height: 100%"
+                >
+                    <div class="col text-center">
+                        <img
+                            src="./assets/imgs/irvin-foto-transparente.png"
+                            alt="foto-irvin"
+                            class="irvin-foto"
+                            style="width: 8rem; height: 8rem"
+                        />
+                        <h2 class="mi-nombre-es">Hi!, I'm Irvin Real</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-8 col-xs-5 col-md-12">
+                                <h2 class="ocupacion">
+                                    Full Stack Web Developer
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </main>
+
         <!-- Section - two -->
-        <section class="section-two-my-projects" id="section2">
-            <!-- Caja de proyectos -->
-            <div class="box-proyectos">
-                <div class="box-proyecto wash">
-                    <a href="./public/wash/index.html" class="a-box-proyecto"></a>
-                    <h6>Car Wash</h6>
-                </div>
-                <div class="box-proyecto cajero-atm">
-                    <a href="./public/cajero-atm/index.html" class="a-box-proyecto"></a>
-                    <h6 class="cajero-atm-txt">Cajero ATM</h6>
-                </div>
-                <div class="box-proyecto viajes">
-                    <a href="./public/viajes/index.html" class="a-box-proyecto"></a>
-                    <h6>Travel.com</h6>
-                </div>
-                <div class="box-proyecto omegalab">
-                    <a href="./public/omegalabs/index.html" class="a-box-proyecto"></a>
+        <section
+            class="container-fluid bg-warning"
+            style="height: 100vh"
+            id="section2"
+        >
+            <div class="row" style="height: 100%">
+                <div class="col text-center my-5">
+                    <div class="row wash position-relative" style="height: 25%">
+                        <a
+                            href="./public/wash/index.html"
+                            class="a-box-proyecto"
+                            >Car Wash</a
+                        >
+                    </div>
+                    <div
+                        class="row cajero-atm position-relative"
+                        style="height: 25%"
+                    >
+                        <a
+                            href="./public/cajero-atm/index.html"
+                            class="a-box-proyecto"
+                            >Cajero ATM</a
+                        >
+                    </div>
+                    <div
+                        class="row viajes position-relative"
+                        style="height: 25%"
+                    >
+                        <a
+                            href="./public/viajes/index.html"
+                            class="a-box-proyecto"
+                            >Viajes.com</a
+                        >
+                    </div>
+                    <div
+                        class="row laboratorios position-relative"
+                        style="height: 25%"
+                    >
+                        <a
+                            href="./public/omegalabs/index.html"
+                            class="a-box-proyecto"
+                            >Laboratorios Omega</a
+                        >
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section-three-about-me" id="section3">
-            <h4 class="title-about-me">About me...</h4>
-            <h5>Hobbies</h5>
-            <!-- <h6>Very good experience and skills on managment, communication,</h6> -->
-            <h5>Skills</h5>
-            <!-- <h6>Exersicing
-                Reading
-                Mindfullnes
-                Learn anything about mind</h6> -->
-                <h5>My thinking</h5>
-        </section>
-        <footer id="footer">
-            <div class="container-knowledge-skills">
-                <h5>Knowledge and Skills</h5>
-                <div class="container">
-                    <div class="fila fila-beginner">
-                        <div class="beginner-title">
-                            <h5>Beginner</h5>
-                        </div>
+
+        <!-- Section -Three -->
+        <section class="container-fluid" style="height: 100vh" id="section3">
+            <div class="row">
+                <div class="col p-0">
+                    <h4 class="title-about-me ms-5 mt-5 text-primary">
+                        <span class="primerSaludo">About me..</span>
+                    </h4>
+                    <img
+                        src="./assets/imgs/irvin-logo-icon.png"
+                        alt="logotipo-irvin"
+                        id="logo-i"
+                    />
+                    <!-- <h5>Hobbies</h5> -->
+                    <!-- <h6>Very good experience and skills on managment, communication,</h6> -->
+                    <!-- <h5>Skills</h5> -->
+                    <!-- <h6>Exersicing
+                    Reading
+                    Mindfullnes
+                    Learn anything about mind</h6> -->
+                    <!-- <h5>My thinking</h5> -->
+                    <div class="barras-animadas">
+                        <div class="line line1"></div>
+                        <div class="line line2"></div>
+                        <div class="line line3"></div>
+                        <div class="line line4"></div>
+                        <div class="line line5"></div>
+                        <div class="line line6"></div>
                     </div>
-                    <div class="fila fila-mid">
-                        <div class="mid-title">
-                            <h5>Mid</h5>
-                        </div>
-                    </div>
-                    <div class="fila fila-advanced">
-                        <div class="advanced-title">
-                            <h5>Advanced</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-up-logos">
-                    <img src="./assets/imgs/footer/mongodb-logo-png.png" alt="mongodb-logo" style="width: 3rem;" class="logo-mongodb">
-                    <img src="./assets/imgs/footer/mySql-logo-png.png" alt="mySql-logo" style="width: 3rem;" class="logo-mysql">
                 </div>
             </div>
-            <div class="container-personal-information">
-                <div class="personal-information-box">
-                    <h5>Irvin Osvaldo Gonzalez Real</h5>
-                    <h6>
-                        Email: irvin.glez.real@hotmail.com -
-                        irvin.gm.iogr@gmail.com.
-                    </h6>
-                    <h6>WhatsApp: +(52) 33 33 53 31 76</h6>
-                    <h6>Zapopan, Jal. México.</h6>
+        </section>
+        <footer
+            id="footer"
+            class="container-fluid bg-warning"
+            style="height: 100vh"
+        >
+            <div class="row">
+                <div class="col">
+                    <h5>Knowledge and Skills</h5>
+                    <div class="containr">
+                        <div class="fila fila-beginner">
+                            <div class="beginner-title">
+                                <h5>Beginner</h5>
+                            </div>
+                        </div>
+                        <div class="fila fila-mid">
+                            <div class="mid-title">
+                                <h5>Mid</h5>
+                            </div>
+                        </div>
+                        <div class="fila fila-advanced">
+                            <div class="advanced-title">
+                                <h5>Advanced</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-up-logos">
+                        <img
+                            src="./assets/imgs/footer/mongodb-logo-png.png"
+                            alt="mongodb-logo"
+                            style="width: 3rem"
+                            class="logo-mongodb"
+                        />
+                        <img
+                            src="./assets/imgs/footer/mySql-logo-png.png"
+                            alt="mySql-logo"
+                            style="width: 3rem"
+                            class="logo-mysql"
+                        />
+                    </div>
+                </div>
+                <div class="col position-relative bg-primary">
+                    <div class="container-personal-information position-absolute bottom-0 end-0">
+                        <div class="personal-information-box">
+                            <h5>Irvin Osvaldo Gonzalez Real</h5>
+                            <h6>
+                                Email: irvin.glez.real@hotmail.com -
+                                irvin.gm.iogr@gmail.com.
+                            </h6>
+                            <h6>WhatsApp: +(52) 33 33 53 31 76</h6>
+                            <h6>Zapopan, Jal. México.</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
         <script src="./js/main.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>

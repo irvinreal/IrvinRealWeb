@@ -1,0 +1,228 @@
+#section3 {
+    position: relative;
+}
+
+.bg-dark-text {
+    animation-name: bg-dark-text;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.bg-dar {
+    animation-name: bg-dark;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg-dark-text {
+    from {
+        font-size: 5rem;
+        color: rgb(173, 172, 172);
+    }
+
+    40% {
+        color: rgb(31, 31, 31);
+    }
+    
+    to {
+        font-size: 14rem;
+        color: black;
+    }
+}
+
+@keyframes bg-dark {
+    0% {
+        /* opacity: 0; */
+        background-color: rgb(255, 255, 255);
+        height: 1vh;
+        box-shadow: 0 0 7px black;
+    }
+
+    20% {
+        height: 7vh;
+    }
+
+    to {
+        background-color: black;
+        height: 100vh;
+    }
+}
+
+/* .barras-animadas {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    direction: rtl;
+    width: 100vw;
+} */
+
+.line {
+    width: 0;
+    height: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.line1 {
+    animation-name: animation-line1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes animation-line1 {
+    0% {
+        width: 0%;
+        background-color: var(--brown-a);
+    }
+
+    60% {
+        background-color: var(--black-a);
+    }
+
+    100% {
+        width: 90%;
+        background-color: var(--green-a);
+        opacity: 0;
+    }
+}
+
+.line2 {
+    animation-name: animation-line2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    height: 0.1rem;
+}
+
+@keyframes animation-line2 {
+    10% {
+        width: 0;
+        background-color: var(--green-a);
+        opacity: 0;
+    }
+
+    60% {
+        background-color: var(--black-a);
+        opacity: 1;
+    }
+
+    100% {
+        width: 50%;
+        background-color: var(--brown-a);
+        opacity: 0;
+    }
+}
+
+.line3 {
+    animation-name: animation-line3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    height: 0.2rem;
+}
+
+@keyframes animation-line3 {
+    10% {
+        width: 0;
+        background-color: var(--green-a);
+    }
+
+    60% {
+        background-color: var(--black-a);
+    }
+
+    100% {
+        width: 20rem;
+        background-color: var(--brown-a);
+    }
+}
+
+.line4 {
+    animation-name: animation-line4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    height: 0.1rem;
+}
+
+@keyframes animation-line4 {
+    10% {
+        width: 0;
+        background-color: var(--green-a);
+    }
+
+    60% {
+        background-color: var(--black-a);
+        opacity: 1;
+    }
+
+    100% {
+        width: 80%;
+        background-color: var(--brown-a);
+        opacity: 0;
+    }
+}
+
+.line5 {
+    animation-name: animation-line5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes animation-line5 {
+    10% {
+        width: 0;
+        background-color: var(--brown-a);
+    }
+
+    60% {
+        background-color: var(--black-a);
+    }
+
+    100% {
+        width: 50%;
+        background-color: var(--green-a);
+        opacity: 0;
+    }
+}
+
+.line6 {
+    animation-name: animation-line6;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes animation-line6 {
+    10% {
+        width: 0;
+        background-color: var(--brown-a);
+    }
+
+    60% {
+        background-color: var(--black-a);
+    }
+
+    100% {
+        width: 13rem;
+        background-color: var(--green-a);
+        opacity: 0;
+    }
+}
+
+.title-about-me {
+    font-size: 7rem;
+    font-weight: 500;
+    text-shadow: 2px -2px 5px rgb(56, 48, 18), -8px 4px 5px rgb(253, 173, 0);
+}
+
+#logo-i {
+    width: 3.8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 102px;
+    left: 195px;
+    box-shadow: 0 0 10px rgb(231, 158, 0), 0 0 10px rgb(239, 163, 0);
+    border: 3px solid rgb(0, 0, 0); 
+}
