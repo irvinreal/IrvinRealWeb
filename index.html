@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="./styles/2section-two.css" />
         <link rel="stylesheet" href="./styles/3section-three.css" />
         <!-- <link rel="stylesheet" href="./styles/4section-three-about-me.css" /> -->
-        <!-- <link rel="stylesheet" href="./styles/5footer.css" /> -->
+        <link rel="stylesheet" href="./styles/4footer.css" />
         <link
             rel="shortcut icon"
             href="./assets/imgs/irvin-logo-icon.png"
@@ -174,26 +174,30 @@
         </section>
         <footer
             id="footer"
-            class="container-fluid bg-warning"
-            style="height: 100vh"
+            class="container-fluid bg-warning position-relative"
+            style="height: 100vh; width: 100vw"
         >
-            <div class="row">
-                <div class="col">
-                    <h5>Knowledge and Skills</h5>
-                    <div class="containr">
-                        <div class="fila fila-beginner">
-                            <div class="beginner-title">
-                                <h5>Beginner</h5>
+            <div class="row m-0" style="height: 100%; width: 100%">
+                <!-- box left -->
+                <div
+                    class="col position-relative"
+                    style="height: 100vh; width: 50vw"
+                >
+                    <div class="row justify-content-center mt-5 position-relative">
+                        <h5 class="text-center">Knowledge and Skills</h5>
+                        <div class="col">
+                            <div class="box-title beginner">
+                                <h5 class="text-center">Beginner</h5>
                             </div>
                         </div>
-                        <div class="fila fila-mid">
-                            <div class="mid-title">
-                                <h5>Mid</h5>
+                        <div class="col">
+                            <div class="box-title mid">
+                                <h5 class="text-center">Mid</h5>
                             </div>
                         </div>
-                        <div class="fila fila-advanced">
-                            <div class="advanced-title">
-                                <h5>Advanced</h5>
+                        <div class="col">
+                            <div class="box-title advanced">
+                                <h5 class="text-center">Advanced</h5>
                             </div>
                         </div>
                     </div>
@@ -212,16 +216,33 @@
                         />
                     </div>
                 </div>
-                <div class="col position-relative bg-primary">
-                    <div class="container-personal-information position-absolute bottom-0 end-0">
-                        <div class="personal-information-box">
-                            <h5>Irvin Osvaldo Gonzalez Real</h5>
-                            <h6>
-                                Email: irvin.glez.real@hotmail.com -
-                                irvin.gm.iogr@gmail.com.
-                            </h6>
-                            <h6>WhatsApp: +(52) 33 33 53 31 76</h6>
-                            <h6>Zapopan, Jal. México.</h6>
+                <!-- box right -->
+                <div class="col" style="height: 100vh; width: 50vw">
+                    <div
+                        class="row m-0 justify-content-center align-content-center"
+                        style="height: 100%; width: 100%"
+                    >
+                        <img
+                            src="./assets/imgs/Vector.svg"
+                            alt="imagen-fondo"
+                            id="img-fondo-footer"
+                        />
+                        <div
+                            class="col-9 text-end text-white text-bg-primary rounded-4 px-5 py-3 ms-5 mb-5 contacto"
+                        >
+                            <h6>Irvin Osvaldo Gonzalez Real</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <p class="m-0">
+                                        irvin.glez.real@hotmail.com -
+                                        irvin.gm.iogr@gmail.com.
+                                    </p>
+                                    <p class="m-0">
+                                        WhatsApp: +(52) 33 33 53 31 76
+                                    </p>
+                                    <p class="m-0">Zapopan, Jal. México.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
