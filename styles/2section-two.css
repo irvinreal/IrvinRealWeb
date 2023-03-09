@@ -3,7 +3,7 @@
     height: 100%;
     background-color: rgb(0, 0, 0);
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
 .a-box-proyecto:hover {
     background-color: transparent;
     color: white;
-    font-size: 5.5rem;
+    font-size: 4rem;
     z-index: 1000;
 }
 
@@ -29,9 +29,10 @@
     box-shadow: 0 3px 5px rgb(255, 255, 255), 0 -5px 5px rgb(255, 255, 255);
 }
 
-.viajes .a-box-proyecto:hover {
-    text-shadow: 0 2px 10px rgba(255, 204, 0, 0.533);
-    box-shadow: 0 5px 5px rgb(255, 204, 0), 0 -5px 5px rgb(255, 204, 0);
+.memes .a-box-proyecto:hover {
+    background-color: #00eeff;
+    text-shadow: 0 2px 10px #1C996F;
+    box-shadow: 0 5px 5px #1C996F, 0 -5px 5px #1C996F;
 }
 
 .laboratorios .a-box-proyecto:hover {
@@ -53,12 +54,12 @@
     background-repeat: no-repeat;
 }
 
-.viajes {
+/* .memes {
     background-image: url(../assets/imgs/viajes/viajes-1-1.jpg);
-    /* background-position: center; */
+    background-position: center; 
     background-size: cover;
     background-repeat: no-repeat;
-}
+}  */
 
 .laboratorios {
     background-image: url(../assets/imgs/omegalab/Trabajo-laboratorio-clínico.jpg);
@@ -66,3 +67,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.laboratorios .a-box-proyecto:hover {
+    font-size: 3.5rem !important;
+}
+
+.memes .a-box-proyecto:hover {
+    font-size: 3rem !important;
+}
+
